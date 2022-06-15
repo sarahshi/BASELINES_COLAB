@@ -11,6 +11,9 @@ dependencies:
     - numpy         # N-d array and numerics
     - pandas        # Labeled array library
     - scipy         # Common math/stats/science functions
+    - seaborn       # Statistical visualizations
+    - flake8
+    - pep8
     - pip
     - pip:
         - mc3
