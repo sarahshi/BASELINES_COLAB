@@ -1,11 +1,8 @@
 name: mc3_baselines
 channels:
-    - conda-forge
     - defaults
 dependencies:
     - python=3.6    # Python version 3.9, 3.6 original
-    - ipython       # IPython interpreter and tools
-    - jupyter       # Jupyter federation architecture
     - matplotlib    # 2D plotting library
     - numpy         # N-d array and numerics
     - pandas        # Labeled array library
@@ -18,6 +15,4 @@ dependencies:
     - pip:
         - mc3
         - pykrige
-        - uncertainties
-    - scikit-learn
     - pathlib 
