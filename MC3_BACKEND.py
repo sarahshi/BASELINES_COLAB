@@ -858,7 +858,7 @@ def MCMC(data, uncert, indparams, log, savefile):
     mc3_output = mc3.sample(data, uncert, func=func, params=params, indparams=indparams, 
         pmin=pmin, pmax=pmax, priorlow=priorlow, priorup=priorup, 
         pnames=pnames, texnames=texnames, sampler='snooker', rms=False,
-        nsamples=1e6, nchains=9, ncpu=3, burnin=5000, thinning=1, # 1e6, 5000
+        nsamples=1e6, nchains=9, ncpu=2, burnin=5000, thinning=1, # 1e6, 5000
         leastsq='trf', chisqscale=False, grtest=True, grbreak=1.01, grnmin=0.5,
         hsize=10, kickoff='normal', wlike=False, plots=False, log=log, savefile=savefile)
 
