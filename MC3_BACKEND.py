@@ -392,11 +392,11 @@ def trace(posterior, title, zchain=None, pnames=None, thinning=25,
                     ylow = 9.479-0.862*np.amin([npanels-1,npars-npanels*page-1])
                     bbox = mpl.transforms.Bbox([[0.0, ylow], [8.5, 11]])
 
-                fig.savefig(f"{sf[0]}_page{page:02d}{sf[1]}", bbox_inches=bbox, backend='pgf')
+                fig.savefig(f"{sf[0]}_page{page:02d}{sf[1]}", bbox_inches=bbox)
             else:
                 fig.suptitle(title)
                 plt.ioff()
-                fig.savefig(savefile, bbox_inches='tight', backend='pgf') # dpi = 100)
+                fig.savefig(savefile, bbox_inches='tight') # dpi = 100)
 
     return axes
 
@@ -563,11 +563,11 @@ def histogram(posterior, title, pnames=None, thinning=1, fignum=1100,
         for page, fig in enumerate(figs):
             if npages > 1:
                 sf = os.path.splitext(savefile)
-                fig.savefig(f"{sf[0]}_page{page:02d}{sf[1]}", bbox_inches='tight', backend='pgf')
+                fig.savefig(f"{sf[0]}_page{page:02d}{sf[1]}", bbox_inches='tight')
             else:
                 fig.suptitle(title)
                 plt.ioff()
-                fig.savefig(savefile, bbox_inches='tight', backend='pgf')
+                fig.savefig(savefile, bbox_inches='tight')
     
     return axes
 
@@ -786,7 +786,7 @@ def modelfit(data, uncert, indparams, model, title, nbins=75,
     if savefile is not None:
         plt.suptitle(title)
         plt.ioff()
-        plt.savefig(savefile, backend='pgf')
+        plt.savefig(savefile)
     return ax, rax
 
 def subplotter(rect, margin, ipan, nx, ny=None, ymargin=None):
@@ -874,7 +874,7 @@ def Run_All_Spectra(dfs_dict, paths):
     of peak locations, peak widths, and peak heights, as well as the PCA vectors used to fit the spectra. These values are 
     exported in a csv file and figures are created for each individual sample."""
 
-    path_parent = os.path.dirname(os.getcwd())
+    path_parent = os.getcwd()
 
     PCAmatrix = Load_PCA(paths[0])
     Peak_1635_PCAmatrix = Load_PCA(paths[1])
@@ -1113,7 +1113,7 @@ def Run_All_Spectra(dfs_dict, paths):
             ax4.legend(loc = 'upper right', prop={'size': 12})
             ax4.invert_xaxis()
             plt.tight_layout()
-            plt.savefig(path_beg + figurepath + files + '.pdf', backend='pgf')
+            plt.savefig(path_beg + figurepath + files + '.pdf')
             plt.close('all')
 
             BL_MAX_1635_ABS = Baseline_Solve_BP[np.argmax(H1635_BP)]
