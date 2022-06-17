@@ -7,4 +7,4 @@ This algorithm applies to samples for which devolatilized spectra and baselines 
 <a href="https://colab.research.google.com/github/sarahshi/BASELINES_COLAB/blob/main/MC3_RUNFILE_COLAB.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sarahshi/BASELINES/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sarahshi/BASELINES_COLAB/f94266869cfd22f1567e86bcc35eea8ce7f46354?urlpath=lab%2Ftree%2FMC3_RUNFILE_BINDER.ipynb)
