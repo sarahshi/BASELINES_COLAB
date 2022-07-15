@@ -1351,7 +1351,7 @@ def Concentration_Output(Volatiles_DF, N, thickness, MI_Composition):
             H2OT_3550_M_STD = mega_spreadsheet['H2OT_3550_STD'][l]
             H2Om_1635_BP_STD = mega_spreadsheet['H2Om_1635_STD'][l]
             CO2_1515_BP_STD = mega_spreadsheet['CO2_1515_STD'][l]
-            CO2_1515_BP_STD = mega_spreadsheet['CO2_1430_STD'][l]
+            CO2_1430_BP_STD = mega_spreadsheet['CO2_1430_STD'][l]
             H2Om_5200_M_STD = mega_spreadsheet['H2Om_5200_STD'][l]
             OH_4500_M_STD = mega_spreadsheet['OH_4500_STD'][l]
             density_sat = density_df['Density'][l]
